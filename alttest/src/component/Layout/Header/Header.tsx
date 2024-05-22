@@ -24,7 +24,7 @@ const Header = () => {
                 <NavLink to={PATHS.REGRESS} className={style.colorLink}>Регрессионное тестирование</NavLink>
             </li>
             <li className={style.navItem}>
-                <NavLink to={PATHS.SIGNIN} className={style.colorLink}>Войти</NavLink>
+                <NavLink to={PATHS.SIGNIN} className={style.colorLink}>Профиль</NavLink>
             </li>
             </ul>
             </nav>

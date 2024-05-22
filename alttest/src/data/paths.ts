@@ -2,8 +2,8 @@ enum PATHS {
     MAIN = "/",
     SPACES = "/spaces",
     REGRESS = "/regress",
-    SIGNIN = "/singin",
-    REGISTER = "/register"
+    SIGNIN = "/signin",
+    SIGNUP = "/signup"
 }
 
 export default PATHS;
