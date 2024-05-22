@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\alttest",
+    "\\alttest\\public",
+    "\\alttest\\src",
+    "\\alttest\\src\\component",
+    "\\alttest\\src\\component\\Layout",
+    "\\alttest\\src\\component\\Layout\\Header",
+    "\\alttest\\src\\data",
+    "\\alttest\\src\\pages",
+    "\\alttest\\src\\pages\\Main"
+  ],
+  "SelectedNode": "\\alttest\\public\\index.html",
+  "PreviewInSolutionExplorer": false
+}
