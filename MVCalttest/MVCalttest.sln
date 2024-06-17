@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCalttest", "MVCalttest.csproj", "{70E56008-2F8C-446E-9650-98BB39CD4011}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E56008-2F8C-446E-9650-98BB39CD4011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E56008-2F8C-446E-9650-98BB39CD4011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E56008-2F8C-446E-9650-98BB39CD4011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E56008-2F8C-446E-9650-98BB39CD4011}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8863DA6-C14B-4C52-80A9-61F88240A0F5}
+	EndGlobalSection
+EndGlobal

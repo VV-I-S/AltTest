@@ -13,7 +13,7 @@ import {
 } from 'material-react-table';
 
 
-type Person = {
+type RegressH = {
   name: {
     firstName: string;
     lastName: string;
@@ -24,7 +24,7 @@ type Person = {
 };
 
 
-const data: Person[] = [
+const data: RegressH[] = [
   {
     name: {
       firstName: 'John',
@@ -74,7 +74,7 @@ const data: Person[] = [
 
   export default function Regress() {
      //should be memoized or stable
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<MRT_ColumnDef<RegressH>[]>(
     () => [
       {
         accessorKey: 'name.firstName', //access nested data with dot notation

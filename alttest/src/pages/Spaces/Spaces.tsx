@@ -5,94 +5,69 @@ import {
   type MRT_ColumnDef,
 } from 'material-react-table';
 
-//example data type
-type Person = {
-  name: {
-    firstName: string;
-    lastName: string;
-  };
-  address: string;
-  city: string;
-  state: string;
+type Project = {
+  title: string
+  description: string;
+  countTP: number;
+  countTK: number;
 };
 
-//nested data is ok, see accessorKeys in ColumnDef below
-const data: Person[] = [
+const data: Project[] = [
   {
-    name: {
-      firstName: 'John',
-      lastName: 'Doe',
-    },
-    address: '261 Erdman Ford',
-    city: 'East Daphne',
-    state: 'Kentucky',
+    title: 'SB2',
+    description: 'Главный проект компании, тут находится документация ко всему функционалу проекта',
+    countTP: 100,
+    countTK: 212,
   },
   {
-    name: {
-      firstName: 'Jane',
-      lastName: 'Doe',
-    },
-    address: '769 Dominic Grove',
-    city: 'Columbus',
-    state: 'Ohio',
+    title: 'TerminalQA',
+    description: 'Терминальный проект',
+    countTP: 20,
+    countTK: 103,
   },
   {
-    name: {
-      firstName: 'Joe',
-      lastName: 'Doe',
-    },
-    address: '566 Brakus Inlet',
-    city: 'South Linda',
-    state: 'West Virginia',
+    title: 'FE QA',
+    description: 'Проект команды FE QA',
+    countTP: 150,
+    countTK: 145,
   },
   {
-    name: {
-      firstName: 'Kevin',
-      lastName: 'Vandy',
-    },
-    address: '722 Emie Stream',
-    city: 'Lincoln',
-    state: 'Nebraska',
+    title: 'Regress',
+    description: 'Проект для запуска регрессионного тестирования',
+    countTP: 14,
+    countTK: 17,
   },
   {
-    name: {
-      firstName: 'Joshua',
-      lastName: 'Rolluffs',
-    },
-    address: '32188 Larkin Turnpike',
-    city: 'Omaha',
-    state: 'Nebraska',
+    title: 'Auto QA',
+    description: 'Проект для написания тестов к API',
+    countTP: 3,
+    countTK: 40,
   },
 ];
 
 const Spaces = () => {
   //should be memoized or stable
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<MRT_ColumnDef<Project>[]>(
     () => [
       {
-        accessorKey: 'name.firstName', //access nested data with dot notation
-        header: 'First Name',
+        accessorKey: 'title', //access nested data with dot notation
+        header: 'Название',
         size: 150,
       },
       {
-        accessorKey: 'name.lastName',
-        header: 'Last Name',
-        size: 150,
+        accessorKey: 'description', //normal accessorKey
+        header: 'Описание',
+        size: 250,
       },
       {
-        accessorKey: 'address', //normal accessorKey
-        header: 'Address',
-        size: 200,
+        accessorKey: 'countTP',
+        header: 'Количество тест-планов',
+        size: 120,
       },
       {
-        accessorKey: 'city',
-        header: 'City',
-        size: 150,
-      },
-      {
-        accessorKey: 'state',
-        header: 'State',
-        size: 150,
+        accessorKey: 'countTK',
+        header: 'Количество кейсов',
+        size: 120,
       },
     ],
     [],
@@ -100,7 +75,7 @@ const Spaces = () => {
 
   const table = useMaterialReactTable({
     columns,
-    data, //data must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
+    data, //data must be memoized or stable (usecountTK, useMemo, defined outside of this component, etc.)
   });
 
   return <MaterialReactTable table={table} />;
